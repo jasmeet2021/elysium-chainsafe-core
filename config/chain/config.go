@@ -3,7 +3,7 @@ package chain
 import (
 	"fmt"
 
-	"github.com/ChainSafe/chainbridge-core/flags"
+	"github.com/nonceblox/elysium-chainsafe-core/flags"
 	"github.com/spf13/viper"
 )
 

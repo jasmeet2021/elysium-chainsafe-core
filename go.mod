@@ -1,4 +1,4 @@
-module github.com/devanshubhadouria/chainbridge-core
+module github.com/nonceblox/elysium-chainsafe-core
 
 go 1.17
 

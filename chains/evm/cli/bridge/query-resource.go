@@ -3,10 +3,10 @@ package bridge
 import (
 	"fmt"
 
-	"github.com/devanshubhadouria/chainbridge-core/chains/evm/cli/flags"
-	"github.com/devanshubhadouria/chainbridge-core/chains/evm/cli/logger"
-	"github.com/devanshubhadouria/chainbridge-core/util"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/cli/flags"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/cli/logger"
+	"github.com/nonceblox/elysium-chainsafe-core/util"
 	"github.com/rs/zerolog/log"
 	"github.com/spf13/cobra"
 )

@@ -1,10 +1,10 @@
 package proposal
 
 import (
-	"github.com/devanshubhadouria/chainbridge-core/relayer/message"
-	"github.com/devanshubhadouria/chainbridge-core/types"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/nonceblox/elysium-chainsafe-core/relayer/message"
+	"github.com/nonceblox/elysium-chainsafe-core/types"
 )
 
 func NewProposal(source, destination uint8, depositNonce uint64, resourceId types.ResourceID, data []byte, handlerAddress, bridgeAddress common.Address, metadata message.Metadata) *Proposal {

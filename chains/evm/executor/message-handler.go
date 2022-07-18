@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/devanshubhadouria/chainbridge-core/chains/evm/executor/proposal"
-	"github.com/devanshubhadouria/chainbridge-core/relayer/message"
-	"github.com/devanshubhadouria/chainbridge-core/types"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/executor/proposal"
+	"github.com/nonceblox/elysium-chainsafe-core/relayer/message"
+	"github.com/nonceblox/elysium-chainsafe-core/types"
 	"github.com/rs/zerolog/log"
 )
 

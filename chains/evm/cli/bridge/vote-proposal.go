@@ -3,15 +3,15 @@ package bridge
 import (
 	"fmt"
 
-	"github.com/devanshubhadouria/chainbridge-core/chains/evm/calls/contracts/bridge"
-	"github.com/devanshubhadouria/chainbridge-core/chains/evm/calls/evmtransaction"
-	"github.com/devanshubhadouria/chainbridge-core/chains/evm/calls/transactor"
-	"github.com/devanshubhadouria/chainbridge-core/chains/evm/cli/flags"
-	"github.com/devanshubhadouria/chainbridge-core/chains/evm/cli/initialize"
-	"github.com/devanshubhadouria/chainbridge-core/chains/evm/cli/logger"
-	"github.com/devanshubhadouria/chainbridge-core/chains/evm/executor/proposal"
-	"github.com/devanshubhadouria/chainbridge-core/util"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/contracts/bridge"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/evmtransaction"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/transactor"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/cli/flags"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/cli/initialize"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/cli/logger"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/executor/proposal"
+	"github.com/nonceblox/elysium-chainsafe-core/util"
 	"github.com/rs/zerolog/log"
 	"github.com/spf13/cobra"
 )

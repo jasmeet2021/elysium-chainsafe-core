@@ -8,9 +8,9 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/devanshubhadouria/chainbridge-core/config/chain"
-	"github.com/devanshubhadouria/chainbridge-core/relayer/message"
-	"github.com/devanshubhadouria/chainbridge-core/store"
+	"github.com/nonceblox/elysium-chainsafe-core/config/chain"
+	"github.com/nonceblox/elysium-chainsafe-core/relayer/message"
+	"github.com/nonceblox/elysium-chainsafe-core/store"
 	"github.com/rs/zerolog/log"
 )
 

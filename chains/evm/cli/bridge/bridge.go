@@ -3,7 +3,7 @@ package bridge
 import (
 	"fmt"
 
-	"github.com/devanshubhadouria/chainbridge-core/chains/evm/cli/flags"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/cli/flags"
 	"github.com/spf13/cobra"
 )
 
