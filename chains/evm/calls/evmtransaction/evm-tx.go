@@ -2,8 +2,9 @@ package evmtransaction
 
 import (
 	"crypto/ecdsa"
-	"github.com/devanshubhadouria/chainbridge-core/chains/evm/calls/evmclient"
 	"math/big"
+
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/evmclient"
 
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	"github.com/ethereum/go-ethereum/common"

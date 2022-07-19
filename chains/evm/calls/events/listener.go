@@ -5,10 +5,10 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/devanshubhadouria/chainbridge-core/chains/evm/calls/consts"
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/common"
 	ethTypes "github.com/ethereum/go-ethereum/core/types"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/consts"
 	"github.com/rs/zerolog/log"
 )
 

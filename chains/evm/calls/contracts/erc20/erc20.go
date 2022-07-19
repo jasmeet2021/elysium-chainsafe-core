@@ -1,15 +1,16 @@
 package erc20
 
 import (
-	"github.com/devanshubhadouria/chainbridge-core/chains/evm/calls"
-	"github.com/devanshubhadouria/chainbridge-core/chains/evm/calls/contracts"
-	"github.com/devanshubhadouria/chainbridge-core/chains/evm/calls/transactor"
 	"math/big"
 	"strings"
 
-	"github.com/devanshubhadouria/chainbridge-core/chains/evm/calls/consts"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/contracts"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/transactor"
+
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/consts"
 	"github.com/rs/zerolog/log"
 )
 

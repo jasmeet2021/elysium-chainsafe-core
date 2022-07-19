@@ -6,8 +6,8 @@ package message
 import (
 	"math/big"
 
-	"github.com/devanshubhadouria/chainbridge-core/types"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/nonceblox/elysium-chainsafe-core/types"
 )
 
 type TransferType string

@@ -2,17 +2,18 @@ package contracts
 
 import (
 	"errors"
-	"github.com/ChainSafe/chainbridge-core/chains/evm/calls/consts"
-	mock_calls "github.com/ChainSafe/chainbridge-core/chains/evm/calls/mock"
-	"github.com/ChainSafe/chainbridge-core/chains/evm/calls/transactor"
-	mock_transactor "github.com/ChainSafe/chainbridge-core/chains/evm/calls/transactor/mock"
-	"github.com/ethereum/go-ethereum/accounts/abi"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/golang/mock/gomock"
-	"github.com/stretchr/testify/suite"
 	"math/big"
 	"strings"
 	"testing"
+
+	"github.com/ethereum/go-ethereum/accounts/abi"
+	"github.com/ethereum/go-ethereum/common"
+	"github.com/golang/mock/gomock"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/consts"
+	mock_calls "github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/mock"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/transactor"
+	mock_transactor "github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/transactor/mock"
+	"github.com/stretchr/testify/suite"
 )
 
 type ContractTestSuite struct {

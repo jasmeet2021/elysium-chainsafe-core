@@ -1,15 +1,15 @@
 package cli
 
 import (
-	"github.com/ChainSafe/chainbridge-core/chains/evm/cli/account"
-	"github.com/ChainSafe/chainbridge-core/chains/evm/cli/admin"
-	"github.com/ChainSafe/chainbridge-core/chains/evm/cli/bridge"
-	"github.com/ChainSafe/chainbridge-core/chains/evm/cli/centrifuge"
-	"github.com/ChainSafe/chainbridge-core/chains/evm/cli/deploy"
-	"github.com/ChainSafe/chainbridge-core/chains/evm/cli/erc20"
-	"github.com/ChainSafe/chainbridge-core/chains/evm/cli/erc721"
-	"github.com/ChainSafe/chainbridge-core/chains/evm/cli/logger"
-	"github.com/ChainSafe/chainbridge-core/chains/evm/cli/utils"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/cli/account"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/cli/admin"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/cli/bridge"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/cli/centrifuge"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/cli/deploy"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/cli/erc20"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/cli/erc721"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/cli/logger"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/cli/utils"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

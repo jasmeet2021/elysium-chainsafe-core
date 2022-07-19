@@ -4,14 +4,14 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ChainSafe/chainbridge-core/chains/evm/calls/contracts/erc721"
-	"github.com/ChainSafe/chainbridge-core/chains/evm/calls/evmtransaction"
-	"github.com/ChainSafe/chainbridge-core/chains/evm/cli/initialize"
-	"github.com/ChainSafe/chainbridge-core/util"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/contracts/erc721"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/evmtransaction"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/cli/initialize"
+	"github.com/nonceblox/elysium-chainsafe-core/util"
 
-	"github.com/ChainSafe/chainbridge-core/chains/evm/cli/flags"
-	"github.com/ChainSafe/chainbridge-core/chains/evm/cli/logger"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/cli/flags"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/cli/logger"
 	"github.com/rs/zerolog/log"
 	"github.com/spf13/cobra"
 )

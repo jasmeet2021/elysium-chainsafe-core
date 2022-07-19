@@ -3,7 +3,7 @@ package erc20
 import (
 	"fmt"
 
-	"github.com/ChainSafe/chainbridge-core/chains/evm/cli/flags"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/cli/flags"
 	"github.com/spf13/cobra"
 )
 

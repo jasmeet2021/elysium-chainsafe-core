@@ -4,9 +4,9 @@ import (
 	"context"
 	"math/big"
 
-	"github.com/devanshubhadouria/chainbridge-core/chains/evm/calls"
-	"github.com/devanshubhadouria/chainbridge-core/chains/evm/calls/transactor"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/transactor"
 	"github.com/rs/zerolog/log"
 )
 

@@ -5,12 +5,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ChainSafe/chainbridge-core/chains/evm/executor"
-	mock_voter "github.com/ChainSafe/chainbridge-core/chains/evm/executor/mock"
-	"github.com/ChainSafe/chainbridge-core/chains/evm/executor/proposal"
-	"github.com/ChainSafe/chainbridge-core/relayer/message"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/golang/mock/gomock"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/executor"
+	mock_voter "github.com/nonceblox/elysium-chainsafe-core/chains/evm/executor/mock"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/executor/proposal"
+	"github.com/nonceblox/elysium-chainsafe-core/relayer/message"
 	"github.com/stretchr/testify/suite"
 )
 

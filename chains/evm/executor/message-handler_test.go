@@ -5,9 +5,9 @@ import (
 
 	"testing"
 
-	"github.com/ChainSafe/chainbridge-core/chains/evm/executor"
-	"github.com/ChainSafe/chainbridge-core/relayer/message"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/executor"
+	"github.com/nonceblox/elysium-chainsafe-core/relayer/message"
 	"github.com/stretchr/testify/suite"
 )
 

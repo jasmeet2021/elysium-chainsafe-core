@@ -3,14 +3,14 @@ package erc20
 import (
 	"fmt"
 
-	"github.com/ChainSafe/chainbridge-core/chains/evm/calls/contracts/erc20"
-	"github.com/ChainSafe/chainbridge-core/chains/evm/calls/evmtransaction"
-	"github.com/ChainSafe/chainbridge-core/chains/evm/calls/transactor"
-	"github.com/ChainSafe/chainbridge-core/chains/evm/cli/flags"
-	"github.com/ChainSafe/chainbridge-core/chains/evm/cli/initialize"
-	"github.com/ChainSafe/chainbridge-core/chains/evm/cli/logger"
-	"github.com/ChainSafe/chainbridge-core/util"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/contracts/erc20"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/evmtransaction"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/transactor"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/cli/flags"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/cli/initialize"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/cli/logger"
+	"github.com/nonceblox/elysium-chainsafe-core/util"
 	"github.com/rs/zerolog/log"
 	"github.com/spf13/cobra"
 )

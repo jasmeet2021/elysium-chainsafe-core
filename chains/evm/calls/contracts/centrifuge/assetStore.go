@@ -1,16 +1,17 @@
 package centrifuge
 
 import (
-	"github.com/devanshubhadouria/chainbridge-core/chains/evm/calls"
-	"github.com/devanshubhadouria/chainbridge-core/chains/evm/calls/contracts"
-	"github.com/devanshubhadouria/chainbridge-core/chains/evm/calls/transactor"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/rs/zerolog/log"
 	"strings"
 
-	"github.com/devanshubhadouria/chainbridge-core/chains/evm/calls/consts"
+	"github.com/ethereum/go-ethereum/common/hexutil"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/contracts"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/transactor"
+	"github.com/rs/zerolog/log"
+
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/consts"
 )
 
 type AssetStoreContract struct {

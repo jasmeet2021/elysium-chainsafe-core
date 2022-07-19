@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ChainSafe/chainbridge-core/chains/evm/calls"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls"
 
-	"github.com/ChainSafe/chainbridge-core/keystore"
-	"github.com/ChainSafe/chainbridge-core/types"
+	"github.com/nonceblox/elysium-chainsafe-core/keystore"
+	"github.com/nonceblox/elysium-chainsafe-core/types"
 
-	"github.com/ChainSafe/chainbridge-core/crypto/secp256k1"
+	"github.com/nonceblox/elysium-chainsafe-core/crypto/secp256k1"
 	"github.com/rs/zerolog/log"
 	"github.com/spf13/cobra"
 )

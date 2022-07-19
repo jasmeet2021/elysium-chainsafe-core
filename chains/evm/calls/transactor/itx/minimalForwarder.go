@@ -5,13 +5,13 @@ import (
 	"math/big"
 	"sync"
 
-	"github.com/devanshubhadouria/chainbridge-core/chains/evm/calls/contracts/forwarder"
-	"github.com/devanshubhadouria/chainbridge-core/chains/evm/calls/transactor"
-	"github.com/devanshubhadouria/chainbridge-core/crypto/secp256k1"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/math"
 	"github.com/ethereum/go-ethereum/crypto"
 	signer "github.com/ethereum/go-ethereum/signer/core"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/contracts/forwarder"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/transactor"
+	"github.com/nonceblox/elysium-chainsafe-core/crypto/secp256k1"
 	"github.com/rs/zerolog/log"
 )
 

@@ -1,13 +1,14 @@
 package erc20
 
 import (
-	"github.com/ChainSafe/chainbridge-core/chains/evm/calls"
-	"github.com/ChainSafe/chainbridge-core/chains/evm/calls/consts"
-	"github.com/ChainSafe/chainbridge-core/chains/evm/calls/contracts"
-	"github.com/ChainSafe/chainbridge-core/chains/evm/calls/transactor"
+	"strings"
+
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/common"
-	"strings"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/consts"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/contracts"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/transactor"
 )
 
 type ERC20HandlerContract struct {

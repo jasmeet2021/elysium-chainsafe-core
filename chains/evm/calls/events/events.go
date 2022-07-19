@@ -1,9 +1,9 @@
 package events
 
 import (
-	"github.com/devanshubhadouria/chainbridge-core/types"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/nonceblox/elysium-chainsafe-core/types"
 )
 
 type EventSig string

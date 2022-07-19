@@ -6,10 +6,10 @@ import (
 	"math/big"
 	"strconv"
 
-	"github.com/ChainSafe/chainbridge-core/chains/evm/calls/evmclient"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/evmclient"
 
-	"github.com/ChainSafe/chainbridge-core/chains/evm/cli/flags"
-	"github.com/ChainSafe/chainbridge-core/chains/evm/cli/logger"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/cli/flags"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/cli/logger"
 	"github.com/rs/zerolog/log"
 	"github.com/spf13/cobra"
 )

@@ -5,11 +5,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ChainSafe/chainbridge-core/chains/evm/calls/consts"
-	"github.com/ChainSafe/chainbridge-core/chains/evm/calls/events"
-	"github.com/ChainSafe/chainbridge-core/types"
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/golang/mock/gomock"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/consts"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/events"
+	"github.com/nonceblox/elysium-chainsafe-core/types"
 	"github.com/stretchr/testify/suite"
 )
 

@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/devanshubhadouria/chainbridge-core/chains/evm/calls/transactor"
-	"github.com/devanshubhadouria/chainbridge-core/crypto/secp256k1"
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/transactor"
+	"github.com/nonceblox/elysium-chainsafe-core/crypto/secp256k1"
 )
 
 var (

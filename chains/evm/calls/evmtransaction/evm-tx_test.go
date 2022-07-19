@@ -4,11 +4,11 @@ import (
 	"math/big"
 	"testing"
 
-	evmgaspricer "github.com/devanshubhadouria/chainbridge-core/chains/evm/calls/evmgaspricer"
-	mock_evmgaspricer "github.com/devanshubhadouria/chainbridge-core/chains/evm/calls/evmgaspricer/mock"
+	evmgaspricer "github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/evmgaspricer"
+	mock_evmgaspricer "github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/evmgaspricer/mock"
 
-	"github.com/devanshubhadouria/chainbridge-core/keystore"
 	"github.com/ethereum/go-ethereum/core/types"
+	"github.com/nonceblox/elysium-chainsafe-core/keystore"
 
 	"github.com/ethereum/go-ethereum/common"
 

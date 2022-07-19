@@ -4,7 +4,7 @@
 package main
 
 import (
-	"github.com/ChainSafe/chainbridge-core/example/cmd"
+	"github.com/nonceblox/elysium-chainsafe-core/example/cmd"
 )
 
 func main() {

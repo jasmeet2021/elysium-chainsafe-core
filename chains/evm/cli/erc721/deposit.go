@@ -5,15 +5,15 @@ import (
 	"math/big"
 	"strconv"
 
-	"github.com/ChainSafe/chainbridge-core/chains/evm/calls/contracts/bridge"
-	"github.com/ChainSafe/chainbridge-core/chains/evm/calls/evmtransaction"
-	"github.com/ChainSafe/chainbridge-core/chains/evm/calls/transactor"
-	"github.com/ChainSafe/chainbridge-core/chains/evm/cli/initialize"
-	"github.com/ChainSafe/chainbridge-core/util"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/contracts/bridge"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/evmtransaction"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/transactor"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/cli/initialize"
+	"github.com/nonceblox/elysium-chainsafe-core/util"
 
-	"github.com/ChainSafe/chainbridge-core/chains/evm/cli/flags"
-	"github.com/ChainSafe/chainbridge-core/chains/evm/cli/logger"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/cli/flags"
+	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/cli/logger"
 	"github.com/rs/zerolog/log"
 	"github.com/spf13/cobra"
 )
