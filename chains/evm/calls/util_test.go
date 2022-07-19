@@ -1,12 +1,12 @@
 package calls_test
 
 import (
-	"github.com/devanshubhadouria/chainbridge-core/chains/evm/calls"
-	mock_calls "github.com/devanshubhadouria/chainbridge-core/chains/evm/calls/mock"
+	"github.com/github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls"
+	mock_calls "github.com/github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/mock"
 	"math/big"
 	"testing"
 
-	"github.com/devanshubhadouria/chainbridge-core/crypto/secp256k1"
+	"github.com/github.com/nonceblox/elysium-chainsafe-core/crypto/secp256k1"
 	"github.com/ethereum/go-ethereum"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
