@@ -329,7 +329,7 @@ func (c *BridgeContract) IsProposalVotedBy(by common.Address, p *proposal.Propos
 }
 
 func (c *BridgeContract) GetHandlerAddressForResourceID(
-	resourceID types.ResourceID,
+	 resourceID  types.ResourceID,
 ) (common.Address, error) {
 	log.Debug().Msgf("Getting handler address for resource %s", hexutil.Encode(resourceID[:]))
 	res, err := c.CallContract("_resourceIDToHandlerAddress", resourceID)
