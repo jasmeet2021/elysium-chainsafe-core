@@ -6,18 +6,18 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls"
 	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/consts"
 	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/contracts"
 	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/contracts/deposit"
 	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/calls/transactor"
-	"github.com/ethereum/go-ethereum/common/hexutil"
 
+	"github.com/ethereum/go-ethereum/accounts/abi"
+	"github.com/ethereum/go-ethereum/common"
 	"github.com/nonceblox/elysium-chainsafe-core/chains/evm/executor/proposal"
 	"github.com/nonceblox/elysium-chainsafe-core/relayer/message"
 	"github.com/nonceblox/elysium-chainsafe-core/types"
-	"github.com/ethereum/go-ethereum/accounts/abi"
-	"github.com/ethereum/go-ethereum/common"
 	"github.com/rs/zerolog/log"
 )
 
@@ -329,7 +329,7 @@ func (c *BridgeContract) IsProposalVotedBy(by common.Address, p *proposal.Propos
 }
 
 func (c *BridgeContract) GetHandlerAddressForResourceID(
-	 resourceID  types.ResourceID,
+	resourceID types.ResourceID,
 ) (common.Address, error) {
 	log.Debug().Msgf("Getting handler address for resource %s", hexutil.Encode(resourceID[:]))
 	res, err := c.CallContract("_resourceIDToHandlerAddress", resourceID)
@@ -347,26 +347,26 @@ func idAndNonce(srcId uint8, nonce uint64) *big.Int {
 	return big.NewInt(0).SetBytes(data)
 }
 
-func (c *BridgeContract) IsFeeClaimThresholdReached() (bool, error) {
-	log.Debug().Msgf("Getting fee claim bool  a relayer")
-	res, err := c.CallContract("relayerVoteCount")
-	if err != nil {
-		return false, err
-	}
-	out := abi.ConvertType(res[0], new(bool)).(*bool)
-	return *out, nil
-}
+// func (c *BridgeContract) IsFeeClaimThresholdReached() (bool, error) {
+// 	log.Debug().Msgf("Getting fee claim bool  a relayer")
+// 	res, err := c.CallContract("relayerVoteCount")
+// 	if err != nil {
+// 		return false, err
+// 	}
+// 	out := abi.ConvertType(res[0], new(bool)).(*bool)
+// 	return *out, nil
+// }
 
-func (c *BridgeContract) RelayerClaimFees(
-	destDomainID uint8,
-	opts transactor.TransactOptions,
-) (*common.Hash, error) {
-	log.Debug().
-		Str("destDomainID", strconv.FormatUint(uint64(destDomainID), 10)).
-		Msgf("relayerClaimfees")
-	return c.ExecuteTransaction(
-		"relayerClaimfees",
-		opts,
-		destDomainID,
-	)
-}
+// func (c *BridgeContract) RelayerClaimFees(
+// 	destDomainID uint8,
+// 	opts transactor.TransactOptions,
+// ) (*common.Hash, error) {
+// 	log.Debug().
+// 		Str("destDomainID", strconv.FormatUint(uint64(destDomainID), 10)).
+// 		Msgf("relayerClaimfees")
+// 	return c.ExecuteTransaction(
+// 		"relayerClaimfees",
+// 		opts,
+// 		destDomainID,
+// 	)
+// }

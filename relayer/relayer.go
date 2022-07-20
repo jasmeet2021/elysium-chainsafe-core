@@ -19,8 +19,8 @@ type RelayedChain interface {
 	PollEvents(ctx context.Context, sysErr chan<- error, msgChan chan *message.Message)
 	Write(message *message.Message) error
 	DomainID() uint8
-	CheckFeeClaim() bool
-	GetFeeClaim(msg *message.Message) error
+	// CheckFeeClaim() bool
+	// GetFeeClaim(msg *message.Message) error
 }
 
 func NewRelayer(chains []RelayedChain, metrics Metrics, messageProcessors ...message.MessageProcessor) *Relayer {
@@ -84,18 +84,18 @@ func (r *Relayer) route(m *message.Message) {
 	}
 
 	log.Debug().Msgf("Sending message %+v to destination %v", m, m.Destination)
-	// fee method here.
-	boolVal := destChain.CheckFeeClaim()
-	if boolVal {
-		err := sorcChain.GetFeeClaim(m)
-		if err != nil {
-			log.Error().Msgf("Claiming fees Error %+w", err)
-		}
-	}
-	if err := destChain.Write(m); err != nil {
-		log.Error().Err(err).Msgf("writing message %+v", m)
-		return
-	}
+	// // fee method here.
+	// boolVal := destChain.CheckFeeClaim()
+	// if boolVal {
+	// 	err := sorcChain.GetFeeClaim(m)
+	// 	if err != nil {
+	// 		log.Error().Msgf("Claiming fees Error %+w", err)
+	// 	}
+	// }
+	// if err := destChain.Write(m); err != nil {
+	// 	log.Error().Err(err).Msgf("writing message %+v", m)
+	// 	return
+	// }
 }
 
 func (r *Relayer) addRelayedChain(c RelayedChain) {

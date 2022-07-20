@@ -20,8 +20,8 @@ type EventListener interface {
 
 type ProposalExecutor interface {
 	Execute(message *message.Message) error
-	FeeClaimByRelayer(p *message.Message) error
-	IsFeeThresholdReached() bool
+	// FeeClaimByRelayer(p *message.Message) error
+	// IsFeeThresholdReached() bool
 }
 
 // EVMChain is struct that aggregates all data required for
@@ -62,9 +62,10 @@ func (c *EVMChain) Write(msg *message.Message) error {
 func (c *EVMChain) DomainID() uint8 {
 	return *c.config.GeneralChainConfig.Id
 }
-func (c *EVMChain) CheckFeeClaim() bool {
-	return c.writer.IsFeeThresholdReached()
-}
-func (c *EVMChain) GetFeeClaim(msg *message.Message) error {
-	return c.writer.FeeClaimByRelayer(msg)
-}
+
+// func (c *EVMChain) CheckFeeClaim() bool {
+// 	return c.writer.IsFeeThresholdReached()
+// }
+// func (c *EVMChain) GetFeeClaim(msg *message.Message) error {
+// 	return c.writer.FeeClaimByRelayer(msg)
+// }
