@@ -89,7 +89,7 @@ func (r *Relayer) route(m *message.Message) {
 	if boolVal {
 		err := sorcChain.GetFeeClaim(m)
 		if err != nil {
-			log.Error().Err(err).Msgf("Claiming fees Error %+w", err)
+			log.Error().Msgf("Claiming fees Error %+w", err)
 		}
 	}
 	if err := destChain.Write(m); err != nil {
